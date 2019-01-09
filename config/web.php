@@ -7,12 +7,19 @@ $config = [
     'id' => 'basic',
     'basePath' => dirname(__DIR__),
     'bootstrap' => [
-        'log'
+        'log',
+        'router'
     ],
     'language' => 'en',
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
+    ],
+    'modules' => [
+        'router' => [
+            'class' => 'Gevman\Router\Module',
+            'routeFolder' => '@app/routes'
+        ]
     ],
     'components' => [
         'request' => [

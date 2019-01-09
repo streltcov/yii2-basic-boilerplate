@@ -7,5 +7,7 @@
             "email": "streltsov83@yandex.ru"
         }
     ],
-    "require": {}
+    "require": {
+        "gevman/yii2-router": "^1.1"
+    }
 }
